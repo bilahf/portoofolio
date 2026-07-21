@@ -23,7 +23,7 @@ export const experiences: ExperienceItem[] = [
   },
   {
     company: "DISKOMINFO KABUPATEN GRESIK",
-    logo: "/images/experience/diskominfo.svg",
+    logo: "/images/experience/grsk.png",
     position: "Electronic-Based Government System Division Intern",
     employmentType: "Internship",
     location: "Gresik, Indonesia",
