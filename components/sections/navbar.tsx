@@ -29,16 +29,7 @@ export function Navbar({ sections }: NavbarProps) {
     }
 
     window.history.replaceState(null, "", `#${sectionId}`);
-
-    const navbarOffset = 100;
-
-    const elementPosition =
-      element.getBoundingClientRect().top + window.scrollY;
-
-    window.scrollTo({
-      top: elementPosition - navbarOffset,
-      behavior: "smooth",
-    });
+    element.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
   useEffect(() => {
@@ -150,22 +141,19 @@ export function Navbar({ sections }: NavbarProps) {
                 <div className="mt-4 grid gap-2 border-t border-border/80 pt-4">
                   {sections.map((section) => {
                     const isActive = activeSection === section.id;
-
                     return (
-                      <button
+                      <a
                         key={section.id}
-                        type="button"
-                        onClick={() => handleNavigate(section.id)}
+                        href={`#${section.id}`}
+                        onClick={() => setMenuOpen(false)}
                         className={cn(
-                          "rounded-2xl px-4 py-3 text-left text-sm font-medium transition",
-                          isActive
-                            ? "bg-primary text-white"
-                            : "bg-surface text-foreground hover:bg-primary/10",
+                          "rounded-2xl px-4 py-3 text-sm font-medium transition",
+                          isActive ? "bg-primary text-white" : "bg-surface text-foreground hover:bg-primary/10",
                         )}
                         aria-current={isActive ? "page" : undefined}
                       >
                         {section.label}
-                      </button>
+                      </a>
                     );
                   })}
                 </div>
