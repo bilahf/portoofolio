@@ -3,31 +3,42 @@
 import { useEffect, useState } from "react";
 
 export function useActiveSection(sectionIds: string[]) {
-  const [activeSection, setActiveSection] = useState(sectionIds[0] ?? "home");
+  const [activeSection, setActiveSection] = useState(
+    sectionIds[0] ?? "home",
+  );
 
   useEffect(() => {
-    const observers = sectionIds
-      .map((id) => document.getElementById(id))
-      .filter(Boolean)
-      .map((element) => {
-        const observer = new IntersectionObserver(
-          ([entry]) => {
-            if (entry.isIntersecting) {
-              setActiveSection(entry.target.id);
-            }
-          },
-          {
-            rootMargin: "-40% 0px -45% 0px",
-            threshold: 0.1,
-          },
-        );
+    const handleScroll = () => {
+      // Posisi scroll + offset navbar fixed
+      const scrollPosition = window.scrollY + 120;
 
-        observer.observe(element as HTMLElement);
-        return observer;
-      });
+      let currentSection = sectionIds[0] ?? "home";
+
+      for (const id of sectionIds) {
+        const element = document.getElementById(id);
+
+        if (!element) {
+          continue;
+        }
+
+        if (scrollPosition >= element.offsetTop) {
+          currentSection = id;
+        }
+      }
+
+      setActiveSection(currentSection);
+    };
+
+    // Jalankan sekali saat pertama kali halaman dibuka
+    handleScroll();
+
+    // Update ketika user scroll
+    window.addEventListener("scroll", handleScroll, {
+      passive: true,
+    });
 
     return () => {
-      observers.forEach((observer) => observer.disconnect());
+      window.removeEventListener("scroll", handleScroll);
     };
   }, [sectionIds]);
 
