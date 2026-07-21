@@ -7,7 +7,7 @@ export const profile: Profile = {
   intro:
     "I design and build thoughtful digital products with a strong focus on clarity, performance, and maintainability. My work blends frontend engineering discipline with user-centered design decisions.",
   bio: "Over the last several years, I have led web experiences from concept to production across product teams, startups, and internal platforms. I enjoy translating complex requirements into elegant interfaces that feel calm, confident, and easy to use.",
-  location: "Surabaya, Indonesia",
+  location: "Gresik, Indonesia",
   availability: "Open to senior frontend, design systems, and product engineering roles.",
   profileImage: "/images/profile/nab.png",
   resumeUrl: "/resume.pdf",
