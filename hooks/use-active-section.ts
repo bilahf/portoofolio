@@ -9,10 +9,8 @@ export function useActiveSection(sectionIds: string[]) {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Jarak dari atas viewport untuk menentukan
-      // kapan sebuah section dianggap aktif.
-      // Sesuaikan jika tinggi navbar berubah.
-      const offset = 150;
+      // Posisi scroll + offset navbar fixed
+      const scrollPosition = window.scrollY + 120;
 
       let currentSection = sectionIds[0] ?? "home";
 
@@ -23,11 +21,7 @@ export function useActiveSection(sectionIds: string[]) {
           continue;
         }
 
-        const rect = element.getBoundingClientRect();
-
-        // Section yang sudah melewati posisi offset
-        // dianggap sebagai section yang sedang aktif.
-        if (rect.top <= offset) {
+        if (scrollPosition >= element.offsetTop) {
           currentSection = id;
         }
       }
@@ -35,10 +29,10 @@ export function useActiveSection(sectionIds: string[]) {
       setActiveSection(currentSection);
     };
 
-    // Cek section aktif saat halaman pertama kali dibuka
+    // Jalankan sekali saat pertama kali halaman dibuka
     handleScroll();
 
-    // Update section aktif ketika user melakukan scroll
+    // Update ketika user scroll
     window.addEventListener("scroll", handleScroll, {
       passive: true,
     });
