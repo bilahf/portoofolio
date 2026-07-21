@@ -1,8 +1,4 @@
 import {
-  SiBootstrap,
-  SiCloudflare,
-  SiDocker,
-  SiExpress,
   SiFigma,
   SiFlutter,
   SiGit,
@@ -10,78 +6,237 @@ import {
   SiHtml5,
   SiJavascript,
   SiLaravel,
-  SiMongodb,
   SiMysql,
-  SiNextdotjs,
   SiPhp,
   SiPostgresql,
   SiPython,
   SiReact,
   SiSupabase,
   SiTailwindcss,
-  SiTypescript,
 } from "react-icons/si";
 import { FaJava } from "react-icons/fa6";
-import { TbBrandCpp } from "react-icons/tb";
 import {
   LuBrain,
   LuChartBar,
   LuCode,
-  LuLayoutGrid,
-  LuMessageSquareHeart,
-  LuRouter,
+  LuDatabase,
   LuSheet,
-  LuUsers,
   LuWorkflow,
 } from "react-icons/lu";
 import { Skill } from "./types";
 
 export const skillCategories = [
-  "Programming Languages",
-  "Frontend",
-  "Backend",
-  "Mobile",
-  "Frameworks",
-  "Database",
-  "Cloud",
-  "Tools",
-  "Version Control",
-  "Design Tools",
-  "Soft Skills",
+  "Programming & Software Development",
+  "AI & Automation",
+  "Data & Database",
+  "Tools & Design",
+  "Languages",
 ] as const;
 
 export const skills: Skill[] = [
-  { name: "TypeScript", category: "Programming Languages", icon: SiTypescript, proficiency: "Advanced" },
-  { name: "JavaScript", category: "Programming Languages", icon: SiJavascript, proficiency: "Advanced" },
-  { name: "PHP", category: "Programming Languages", icon: SiPhp, proficiency: "Intermediate" },
-  { name: "Python", category: "Programming Languages", icon: SiPython, proficiency: "Intermediate" },
-  { name: "Java", category: "Programming Languages", icon: FaJava, proficiency: "Intermediate" },
-  { name: "C++", category: "Programming Languages", icon: TbBrandCpp, proficiency: "Intermediate" },
-  { name: "React", category: "Frontend", icon: SiReact, proficiency: "Advanced" },
-  { name: "Next.js", category: "Frontend", icon: SiNextdotjs, proficiency: "Advanced" },
-  { name: "HTML", category: "Frontend", icon: SiHtml5, proficiency: "Advanced" },
-  { name: "Tailwind CSS", category: "Frontend", icon: SiTailwindcss, proficiency: "Advanced" },
-  { name: "Bootstrap", category: "Frontend", icon: SiBootstrap, proficiency: "Intermediate" },
-  { name: "Laravel", category: "Backend", icon: SiLaravel, proficiency: "Intermediate" },
-  { name: "Express", category: "Backend", icon: SiExpress, proficiency: "Intermediate" },
-  { name: "Flutter", category: "Mobile", icon: SiFlutter, proficiency: "Intermediate" },
-  { name: "Next.js App Router", category: "Frameworks", icon: SiNextdotjs, proficiency: "Advanced" },
-  { name: "Supabase", category: "Database", icon: SiSupabase, proficiency: "Intermediate" },
-  { name: "MySQL", category: "Database", icon: SiMysql, proficiency: "Intermediate" },
-  { name: "PostgreSQL", category: "Database", icon: SiPostgresql, proficiency: "Intermediate" },
-  { name: "MongoDB", category: "Database", icon: SiMongodb, proficiency: "Intermediate" },
-  { name: "Cloudflare", category: "Cloud", icon: SiCloudflare, proficiency: "Intermediate" },
-  { name: "Docker", category: "Tools", icon: SiDocker, proficiency: "Intermediate" },
-  { name: "Power BI", category: "Tools", icon: LuChartBar, proficiency: "Intermediate" },
-  { name: "Excel", category: "Tools", icon: LuSheet, proficiency: "Advanced" },
-  { name: "VS Code", category: "Tools", icon: LuCode, proficiency: "Advanced" },
-  { name: "Cisco Packet Tracer", category: "Tools", icon: LuRouter, proficiency: "Intermediate" },
-  { name: "Git", category: "Version Control", icon: SiGit, proficiency: "Advanced" },
-  { name: "GitHub", category: "Version Control", icon: SiGithub, proficiency: "Advanced" },
-  { name: "Figma", category: "Design Tools", icon: SiFigma, proficiency: "Advanced" },
-  { name: "Wireframing", category: "Design Tools", icon: LuLayoutGrid, proficiency: "Advanced" },
-  { name: "Product Thinking", category: "Soft Skills", icon: LuBrain, proficiency: "Advanced" },
-  { name: "Cross-team Collaboration", category: "Soft Skills", icon: LuUsers, proficiency: "Advanced" },
-  { name: "Communication", category: "Soft Skills", icon: LuMessageSquareHeart, proficiency: "Advanced" },
-  { name: "Workflow Ownership", category: "Soft Skills", icon: LuWorkflow, proficiency: "Advanced" },
+  // ==========================================
+  // PROGRAMMING & SOFTWARE DEVELOPMENT
+  // ==========================================
+  {
+    name: "JavaScript",
+    category: "Programming & Software Development",
+    icon: SiJavascript,
+    proficiency: "Intermediate",
+  },
+  {
+    name: "Python",
+    category: "Programming & Software Development",
+    icon: SiPython,
+    proficiency: "Intermediate",
+  },
+  {
+    name: "PHP",
+    category: "Programming & Software Development",
+    icon: SiPhp,
+    proficiency: "Intermediate",
+  },
+  {
+    name: "Java",
+    category: "Programming & Software Development",
+    icon: FaJava,
+    proficiency: "Intermediate",
+  },
+  {
+    name: "Laravel",
+    category: "Programming & Software Development",
+    icon: SiLaravel,
+    proficiency: "Intermediate",
+  },
+  {
+    name: "Flutter",
+    category: "Programming & Software Development",
+    icon: SiFlutter,
+    proficiency: "Intermediate",
+  },
+  {
+    name: "React",
+    category: "Programming & Software Development",
+    icon: SiReact,
+    proficiency: "Intermediate",
+  },
+  {
+    name: "HTML",
+    category: "Programming & Software Development",
+    icon: SiHtml5,
+    proficiency: "Advanced",
+  },
+  {
+    name: "Tailwind CSS",
+    category: "Programming & Software Development",
+    icon: SiTailwindcss,
+    proficiency: "Intermediate",
+  },
+
+  // ==========================================
+  // AI & AUTOMATION
+  // ==========================================
+  {
+    name: "n8n",
+    category: "AI & Automation",
+    icon: LuWorkflow,
+    proficiency: "Intermediate",
+  },
+  {
+    name: "LangGraph",
+    category: "AI & Automation",
+    icon: LuBrain,
+    proficiency: "Intermediate",
+  },
+  {
+    name: "AI Agents",
+    category: "AI & Automation",
+    icon: LuBrain,
+    proficiency: "Intermediate",
+  },
+  {
+    name: "API Integration",
+    category: "AI & Automation",
+    icon: LuCode,
+    proficiency: "Intermediate",
+  },
+
+  // ==========================================
+  // DATA & DATABASE
+  // ==========================================
+  {
+    name: "SQL",
+    category: "Data & Database",
+    icon: LuDatabase,
+    proficiency: "Intermediate",
+  },
+  {
+    name: "Excel",
+    category: "Data & Database",
+    icon: LuSheet,
+    proficiency: "Advanced",
+  },
+  {
+    name: "Power BI",
+    category: "Data & Database",
+    icon: LuChartBar,
+    proficiency: "Intermediate",
+  },
+  {
+    name: "Supabase",
+    category: "Data & Database",
+    icon: SiSupabase,
+    proficiency: "Intermediate",
+  },
+  {
+    name: "MySQL",
+    category: "Data & Database",
+    icon: SiMysql,
+    proficiency: "Intermediate",
+  },
+  {
+    name: "PostgreSQL",
+    category: "Data & Database",
+    icon: SiPostgresql,
+    proficiency: "Intermediate",
+  },
+  {
+    name: "Firebase",
+    category: "Data & Database",
+    icon: LuDatabase,
+    proficiency: "Intermediate",
+  },
+  {
+    name: "DBeaver",
+    category: "Data & Database",
+    icon: LuDatabase,
+    proficiency: "Intermediate",
+  },
+
+  // ==========================================
+  // TOOLS & DESIGN
+  // ==========================================
+  {
+    name: "Git",
+    category: "Tools & Design",
+    icon: SiGit,
+    proficiency: "Intermediate",
+  },
+  {
+    name: "GitHub",
+    category: "Tools & Design",
+    icon: SiGithub,
+    proficiency: "Intermediate",
+  },
+  {
+    name: "VS Code",
+    category: "Tools & Design",
+    icon: LuCode,
+    proficiency: "Advanced",
+  },
+  {
+    name: "Figma",
+    category: "Tools & Design",
+    icon: SiFigma,
+    proficiency: "Intermediate",
+  },
+  {
+    name: "Canva",
+    category: "Tools & Design",
+    icon: LuCode,
+    proficiency: "Advanced",
+  },
+  {
+    name: "Adobe Illustrator",
+    category: "Tools & Design",
+    icon: LuCode,
+    proficiency: "Intermediate",
+  },
+  {
+    name: "CorelDRAW",
+    category: "Tools & Design",
+    icon: LuCode,
+    proficiency: "Intermediate",
+  },
+
+  // ==========================================
+  // LANGUAGES
+  // ==========================================
+  {
+    name: "Indonesian",
+    category: "Languages",
+    icon: LuCode,
+    proficiency: "Native",
+  },
+  {
+    name: "English",
+    category: "Languages",
+    icon: LuCode,
+    proficiency: "Intermediate",
+  },
+  {
+    name: "Mandarin",
+    category: "Languages",
+    icon: LuCode,
+    proficiency: "Basic",
+  },
 ];

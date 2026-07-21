@@ -23,17 +23,11 @@ export type Profile = {
 export type Skill = {
   name: string;
   category:
-    | "Programming Languages"
-    | "Frontend"
-    | "Backend"
-    | "Mobile"
-    | "Frameworks"
-    | "Database"
-    | "Cloud"
-    | "Tools"
-    | "Version Control"
-    | "Design Tools"
-    | "Soft Skills";
+    | "Programming & Software Development"
+    | "AI & Automation"
+    | "Data & Database"
+    | "Tools & Design"
+    | "Languages";
   icon: IconType;
   proficiency?: string;
 };

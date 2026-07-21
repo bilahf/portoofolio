@@ -55,7 +55,7 @@ export function Navbar({ sections }: NavbarProps) {
               <span className="block truncate text-sm font-semibold uppercase tracking-[0.24em] text-primary">
                 {profile.shortName}
               </span>
-              <span className="block truncate text-xs text-muted">Frontend Portfolio</span>
+              <span className="block truncate text-xs text-muted">My Portfolio</span>
             </a>
 
             <nav className="hidden items-center gap-1 lg:flex" aria-label="Primary">

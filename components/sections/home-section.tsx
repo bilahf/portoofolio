@@ -28,7 +28,7 @@ export function HomeSection() {
           <Reveal>
             <div className="max-w-3xl">
               <span className="inline-flex rounded-full border border-primary/15 bg-card px-4 py-2 text-sm font-medium text-primary shadow-soft">
-                Handcrafted portfolio for a product-minded frontend engineer
+                Fresh Graduate Passionate About Technology
               </span>
               <h1 className="mt-6 text-balance text-4xl font-semibold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
                 {profile.name}
