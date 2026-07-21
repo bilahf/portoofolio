@@ -19,28 +19,6 @@ export function Navbar({ sections }: NavbarProps) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isCompact, setIsCompact] = useState(false);
 
-  function handleNavigate(sectionId: string) {
-    const element = document.getElementById(sectionId);
-
-    setMenuOpen(false);
-
-    if (!element) {
-      return;
-    }
-
-    window.history.replaceState(null, "", `#${sectionId}`);
-
-    const navbarOffset = 100;
-
-    const elementPosition =
-      element.getBoundingClientRect().top + window.scrollY;
-
-    window.scrollTo({
-      top: elementPosition - navbarOffset,
-      behavior: "smooth",
-    });
-  }
-
   useEffect(() => {
     const onScroll = () => setIsCompact(window.scrollY > 20);
     onScroll();
@@ -63,52 +41,30 @@ export function Navbar({ sections }: NavbarProps) {
     return () => window.removeEventListener("resize", onResize);
   }, [menuOpen]);
 
-  useEffect(() => {
-    if (!menuOpen) {
-      return;
-    }
-
-    const onKeyDown = (event: KeyboardEvent) => {
-      if (event.key === "Escape") {
-        setMenuOpen(false);
-      }
-    };
-
-    document.body.style.overflow = "hidden";
-    window.addEventListener("keydown", onKeyDown);
-
-    return () => {
-      document.body.style.overflow = "";
-      window.removeEventListener("keydown", onKeyDown);
-    };
-  }, [menuOpen]);
-
   return (
     <header className="fixed inset-x-0 top-0 z-50 px-3 pt-3 sm:px-6">
       <Container>
         <div
           className={cn(
-            "border border-border/80 bg-card/88 shadow-soft backdrop-blur-md transition-all duration-300",
-            menuOpen ? "rounded-[28px]" : "rounded-full",
+            "rounded-full border border-border/80 bg-card/88 shadow-soft backdrop-blur-md transition-all duration-300",
             isCompact ? "px-3 py-2" : "px-4 py-3",
           )}
         >
           <div className="flex items-center justify-between gap-4">
-            <button type="button" onClick={() => handleNavigate("home")} className="min-w-0 text-left">
+            <a href="#home" className="min-w-0">
               <span className="block truncate text-sm font-semibold uppercase tracking-[0.24em] text-primary">
                 {profile.shortName}
               </span>
-              <span className="block truncate text-xs text-muted">Frontend Portfolio</span>
-            </button>
+              <span className="block truncate text-xs text-muted">My Portfolio</span>
+            </a>
 
             <nav className="hidden items-center gap-1 lg:flex" aria-label="Primary">
               {sections.map((section) => {
                 const isActive = activeSection === section.id;
                 return (
-                  <button
+                  <a
                     key={section.id}
-                    type="button"
-                    onClick={() => handleNavigate(section.id)}
+                    href={`#${section.id}`}
                     className={cn(
                       "rounded-full px-4 py-2 text-sm font-medium transition",
                       isActive ? "bg-primary text-white shadow-soft" : "text-muted hover:bg-surface hover:text-foreground",
@@ -116,7 +72,7 @@ export function Navbar({ sections }: NavbarProps) {
                     aria-current={isActive ? "page" : undefined}
                   >
                     {section.label}
-                  </button>
+                  </a>
                 );
               })}
             </nav>
@@ -136,58 +92,37 @@ export function Navbar({ sections }: NavbarProps) {
             </div>
           </div>
 
+
           <AnimatePresence>
             {menuOpen && (
-              <motion.nav
+              <nav
                 id="mobile-navigation"
-                initial={{ opacity: 0, height: 0 }}
-                animate={{ opacity: 1, height: "auto" }}
-                exit={{ opacity: 0, height: 0 }}
-                transition={{ duration: 0.25 }}
-                className="overflow-hidden lg:hidden"
-                aria-label="Mobile"
+                className="mt-4 overflow-hidden lg:hidden"
               >
                 <div className="mt-4 grid gap-2 border-t border-border/80 pt-4">
                   {sections.map((section) => {
                     const isActive = activeSection === section.id;
-
                     return (
-                      <button
+                      <a
                         key={section.id}
-                        type="button"
-                        onClick={() => handleNavigate(section.id)}
+                        href={`#${section.id}`}
+                        onClick={() => setMenuOpen(false)}
                         className={cn(
-                          "rounded-2xl px-4 py-3 text-left text-sm font-medium transition",
-                          isActive
-                            ? "bg-primary text-white"
-                            : "bg-surface text-foreground hover:bg-primary/10",
+                          "rounded-2xl px-4 py-3 text-sm font-medium transition",
+                          isActive ? "bg-primary text-white" : "bg-surface text-foreground hover:bg-primary/10",
                         )}
                         aria-current={isActive ? "page" : undefined}
                       >
                         {section.label}
-                      </button>
+                      </a>
                     );
                   })}
                 </div>
-              </motion.nav>
+              </nav>
             )}
           </AnimatePresence>
         </div>
       </Container>
-
-      <AnimatePresence>
-        {menuOpen ? (
-          <motion.button
-            type="button"
-            aria-label="Close mobile navigation"
-            className="fixed inset-0 -z-10 bg-black/10 lg:hidden"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            onClick={() => setMenuOpen(false)}
-          />
-        ) : null}
-      </AnimatePresence>
     </header>
   );
 }
