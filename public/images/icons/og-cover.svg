@@ -1,0 +1,10 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" rx="32" fill="#F7F7F5"/>
+  <rect x="28" y="28" width="1144" height="574" rx="28" fill="#FFFFFF" stroke="#EAEAEA"/>
+  <circle cx="920" cy="160" r="140" fill="#DDE7D2"/>
+  <rect x="90" y="124" width="124" height="124" rx="32" fill="#F1F1EE"/>
+  <path d="M130 214V108H151L188 173V108H208V214H187L150 149V214H130Z" fill="#5F8D4E"/>
+  <text x="90" y="340" fill="#222222" font-family="Arial, sans-serif" font-size="62" font-weight="700">Nadia Pramesti</text>
+  <text x="90" y="404" fill="#5F8D4E" font-family="Arial, sans-serif" font-size="32">Senior Frontend Engineer &amp; UI Designer</text>
+  <text x="90" y="472" fill="#777777" font-family="Arial, sans-serif" font-size="24">Elegant, responsive, production-ready portfolio built with Next.js and TypeScript.</text>
+</svg>

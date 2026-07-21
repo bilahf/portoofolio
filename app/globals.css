@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 247 247 245;
+  --card: 255 255 255;
+  --surface: 241 241 238;
+  --foreground: 34 34 34;
+  --primary: 95 141 78;
+  --secondary: 164 190 123;
+  --muted: 119 119 119;
+  --border: 234 234 234;
+}
+
+.dark {
+  --background: 18 20 18;
+  --card: 27 30 27;
+  --surface: 34 37 34;
+  --foreground: 242 242 238;
+  --primary: 164 190 123;
+  --secondary: 95 141 78;
+  --muted: 168 168 163;
+  --border: 62 67 62;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  overflow-x: hidden;
+  background: rgb(var(--background));
+  color: rgb(var(--foreground));
+  font-family: var(--font-sans), sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: rgba(95, 141, 78, 0.22);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid rgba(95, 141, 78, 0.45);
+  outline-offset: 2px;
+}
+
+.noise-overlay {
+  position: relative;
+}
+
+.noise-overlay::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.08;
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.7), transparent 20%),
+    radial-gradient(circle at 80% 0%, rgba(255, 255, 255, 0.55), transparent 20%),
+    radial-gradient(circle at 60% 80%, rgba(255, 255, 255, 0.55), transparent 24%);
+}
