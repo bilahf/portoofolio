@@ -3,22 +3,22 @@ import { Profile } from "./types";
 export const profile: Profile = {
   name: "Nabilah Fitriani",
   shortName: "Nabilah",
-  title: "Fresh Graduate who has programming anthusiast",
+  title: "Informatics Engineering Graduate | Full-Stack Development & AI Workflow Automation",
   intro:
-    "I design and build thoughtful digital products with a strong focus on clarity, performance, and maintainability. My work blends frontend engineering discipline with user-centered design decisions.",
-  bio: "Over the last several years, I have led web experiences from concept to production across product teams, startups, and internal platforms. I enjoy translating complex requirements into elegant interfaces that feel calm, confident, and easy to use.",
+    "I am an Informatics Engineering graduate with a strong interest in application development, AI workflow automation, and data analysis. I have experience building systems, integrating APIs, managing databases, and developing practical digital solutions using modern technologies.",
+  bio: "Throughout my academic journey, internships, and organizational experiences, I have worked on application development, system documentation, data management, and workflow automation. I enjoy turning requirements into practical and maintainable solutions while continuously exploring new technologies and improving my technical skills.",
   location: "Gresik, Indonesia",
-  availability: "Open to senior frontend, design systems, and product engineering roles.",
-  profileImage: "/images/profile/nab.png",
+  availability: "Open to opportunities in software development, full-stack development, IT, data, and workflow automation.",
+  profileImage: "/images/profile/nabss.png",
   resumeUrl: "/resume.pdf",
   stats: [
-    { label: "Years building for the web", value: "7+" },
-    { label: "Projects shipped", value: "24" },
-    { label: "Primary focus", value: "Frontend Architecture" },
+    { label: "Education", value: "Informatics Engineering" },
+    { label: "Focus", value: "Full-Stack & Automation" },
+    { label: "Based in", value: "Gresik, Indonesia" },
   ],
   socials: {
     linkedin: "www.linkedin.com/in/bilahf",
     github: "https://github.com/",
-    instagram: "",
+    instagram: "https://www.instagram.com/bilahf/",
   },
 };
