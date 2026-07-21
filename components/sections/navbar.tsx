@@ -92,16 +92,12 @@ export function Navbar({ sections }: NavbarProps) {
             </div>
           </div>
 
+
           <AnimatePresence>
             {menuOpen && (
-              <motion.nav
+              <nav
                 id="mobile-navigation"
-                initial={{ opacity: 0, height: 0 }}
-                animate={{ opacity: 1, height: "auto" }}
-                exit={{ opacity: 0, height: 0 }}
-                transition={{ duration: 0.25 }}
-                className="overflow-hidden lg:hidden"
-                aria-label="Mobile"
+                className="mt-4 overflow-hidden lg:hidden"
               >
                 <div className="mt-4 grid gap-2 border-t border-border/80 pt-4">
                   {sections.map((section) => {
@@ -122,7 +118,7 @@ export function Navbar({ sections }: NavbarProps) {
                     );
                   })}
                 </div>
-              </motion.nav>
+              </nav>
             )}
           </AnimatePresence>
         </div>

@@ -2,56 +2,94 @@ import { ExperienceItem } from "./types";
 
 export const experiences: ExperienceItem[] = [
   {
-    company: "Astra Digital Studio",
+    company: "PT PLN PERSERO UP3 GRESIK",
     logo: "/images/experience/logo-pln.png",
-    position: "Senior Frontend Engineer",
-    employmentType: "Full-time",
-    location: "Jakarta, Indonesia",
-    duration: "2023 - Present",
-    summary:
-      "Leading frontend architecture and design system quality for internal products and customer-facing platforms.",
-    responsibilities: [
-      "Architected a scalable Next.js application foundation with reusable modules and stricter TypeScript patterns.",
-      "Partnered with product and design to simplify dense workflows into faster, clearer user journeys.",
-      "Introduced UI standards, performance budgets, and component documentation to reduce delivery friction.",
-    ],
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Supabase"],
-    achievements: [
-      "Improved Core Web Vitals across the main product suite and reduced layout instability significantly.",
-      "Shortened onboarding time for new frontend contributors by standardizing project structure and conventions.",
-    ],
-  },
-  {
-    company: "Nusantara Commerce Lab",
-    logo: "/images/experience/nusantara-commerce.svg",
-    position: "Frontend Engineer",
-    employmentType: "Full-time",
-    location: "Surabaya, Indonesia",
-    duration: "2021 - 2023",
-    summary: "Built conversion-focused ecommerce interfaces and internal dashboards for regional business teams.",
-    responsibilities: [
-      "Developed responsive storefront and dashboard experiences with reusable React components.",
-      "Worked closely with backend engineers to map APIs into resilient, user-friendly data flows.",
-      "Optimized forms, search, and checkout experiences to reduce drop-off on key business funnels.",
-    ],
-    technologies: ["React", "TypeScript", "Bootstrap", "Laravel", "MySQL"],
-    achievements: [
-      "Shipped a new dashboard information architecture that reduced time-to-task for operations teams.",
-    ],
-  },
-  {
-    company: "Diskominfo Gresik",
-    logo: "/images/experience/diskominfo.svg",
-    position: "UI Developer Intern",
+    position: "Marketing Division Intern",
     employmentType: "Internship",
     location: "Gresik, Indonesia",
-    duration: "2020 - 2021",
-    summary: "Supported public-sector web initiatives with interface development, accessibility improvements, and QA.",
+    duration: "May 2025 - July 2025",
+    summary:
+      "Supported marketing and planning operations through application development, asset data management, documentation, and data processing.",
     responsibilities: [
-      "Implemented responsive page layouts and reusable UI elements for informational portals.",
-      "Helped document content patterns and usability issues found during internal reviews.",
+      "Developed a mobile-based marketing target system using Flutter with multi-platform integration and automatic synchronization with Google Sheets.",
+      "Assisted the Planning Division in using Maximo for transformer asset selection, documentation uploads, and asset data management.",
+      "Compiled and managed customer invoice recapitulation and operational data using Microsoft Excel.",
     ],
-    technologies: ["HTML", "CSS", "JavaScript", "Bootstrap"],
-    achievements: ["Contributed to a more consistent public-facing interface across multiple content pages."],
+    technologies: ["Flutter", "Google Sheets", "Maximo", "Microsoft Excel"],
+    achievements: [
+      "Developed a digital solution to support marketing target management and streamline data synchronization.",
+      "Supported operational data management and documentation processes within the Marketing and Planning Divisions.",
+    ],
+  },
+  {
+    company: "DISKOMINFO KABUPATEN GRESIK",
+    logo: "/images/experience/diskominfo.svg",
+    position: "Electronic-Based Government System Division Intern",
+    employmentType: "Internship",
+    location: "Gresik, Indonesia",
+    duration: "August 2025 - October 2025",
+    summary:
+      "Supported the Electronic-Based Government System division through system documentation and preparation of technical and user-oriented documentation.",
+    responsibilities: [
+      "Prepared system documentation including Software Requirements Specification (SKPL) and application development documentation (DAPL).",
+      "Created an application manual book to support users in understanding and operating the GOWA system.",
+      "Reviewed and organized system information to ensure documentation was structured, clear, and easy to understand.",
+    ],
+    technologies: ["System Documentation", "SKPL", "DAPL", "Microsoft Office"],
+    achievements: [
+      "Contributed to the preparation of structured technical and user documentation for the GOWA system.",
+    ],
+  },
+  {
+    company: "Universitas Muhammadiyah Gresik",
+    logo: "/images/experience/umg.png",
+    position: "Laboratory Teaching Assistant",
+    employmentType: "Part-time",
+    location: "Gresik, Indonesia",
+    duration: "2023 - 2025",
+    summary:
+      "Assisted programming courses and supported students in understanding fundamental programming and web development concepts through practical laboratory sessions.",
+    responsibilities: [
+      "Assisted Structured Programming and Web Programming courses through laboratory sessions and practical learning activities.",
+      "Prepared and delivered programming materials using Java, HTML, CSS, JavaScript, PHP, and Laravel.",
+      "Guided students in understanding programming concepts, debugging code, and completing practical assignments.",
+    ],
+    technologies: [
+      "Java",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "PHP",
+      "Laravel",
+    ],
+    achievements: [
+      "Supported programming education and practical learning for students across multiple academic terms.",
+      "Developed experience in technical communication, mentoring, and problem solving through direct interaction with students.",
+    ],
+  },
+  {
+    company: "HIMATIF UM Gresik",
+    logo: "/images/experience/himatif.png",
+    position: "Secretary I",
+    employmentType: "Organizational Experience",
+    location: "Gresik, Indonesia",
+    duration: "September 2023 - August 2024",
+    summary:
+      "Managed organizational administration, documentation, internal communication, and member development activities within the Informatics Engineering Student Association.",
+    responsibilities: [
+      "Managed administrative documentation, correspondence, and organizational activity records.",
+      "Organized member training programs and monthly evaluation meetings.",
+      "Coordinated internal communication and reminder systems to support organizational activities.",
+    ],
+    technologies: [
+      "Microsoft Office",
+      "Microsoft Excel",
+      "Documentation",
+      "Administrative Management",
+    ],
+    achievements: [
+      "Successfully supported the organization of administrative and member development activities throughout the management period.",
+      "Strengthened experience in organizational coordination, communication, and administrative management.",
+    ],
   },
 ];
