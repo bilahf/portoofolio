@@ -70,7 +70,7 @@ export const experiences: ExperienceItem[] = [
   {
     company: "HIMATIF UM Gresik",
     logo: "/images/experience/himatif.png",
-    position: "Secretary I",
+    position: "General Secretary",
     employmentType: "Organizational Experience",
     location: "Gresik, Indonesia",
     duration: "September 2023 - August 2024",
