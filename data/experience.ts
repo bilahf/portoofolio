@@ -3,7 +3,7 @@ import { ExperienceItem } from "./types";
 export const experiences: ExperienceItem[] = [
   {
     company: "Astra Digital Studio",
-    logo: "/images/experience/astra-digital.svg",
+    logo: "/images/experience/pln.png",
     position: "Senior Frontend Engineer",
     employmentType: "Full-time",
     location: "Jakarta, Indonesia",
