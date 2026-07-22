@@ -17,8 +17,8 @@ export function EducationSection() {
         <Reveal>
           <SectionHeading
             eyebrow="Education"
-            title="Academic foundations that shaped a structured approach to product building"
-            description="A concise timeline keeps the section professional while still leaving room for relevant coursework, activities, and academic achievements."
+            title="Academic background and foundation in Informatics Engineering"
+            description="My academic journey, activities, and relevant coursework that built my foundation in software development, data, and information technology"
           />
         </Reveal>
 

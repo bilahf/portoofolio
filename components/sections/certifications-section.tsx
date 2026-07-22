@@ -18,8 +18,8 @@ export function CertificationsSection() {
         <Reveal>
           <SectionHeading
             eyebrow="Courses & Certifications"
-            title="Ongoing learning that strengthens engineering depth and product judgment"
-            description="Courses and certifications live in one section for a cleaner narrative, with certificate buttons rendered only when a valid link is enabled."
+            title="Continuous learning through courses and professional certifications"
+            description="A collection of courses and certifications that reflect my continuous learning across software development, data analysis, AI, and workflow automation."
           />
         </Reveal>
 

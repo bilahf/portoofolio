@@ -19,8 +19,8 @@ export function ExperienceSection() {
         <Reveal>
           <SectionHeading
             eyebrow="Experience"
-            title="Product work shaped by engineering rigor and design sensitivity"
-            description="A vertical timeline highlights progression, while expandable cards reveal the deeper responsibilities, outcomes, and technologies behind each role."
+            title="Experience gained through internships, projects, and academic activities"
+            description="A collection of professional, academic, and organizational experiences that have helped me develop technical, analytical, and collaboration skills."
           />
         </Reveal>
 
