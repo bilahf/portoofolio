@@ -29,8 +29,8 @@ export function ContactSection() {
         <Reveal>
           <SectionHeading
             eyebrow="Contact"
-            title="Let’s connect around thoughtful digital products and frontend craft"
-            description="Contact details stay clean and actionable, with one-tap copy actions for email and phone plus optional social links that disappear automatically when empty."
+            title="Let’s connect and build something meaningful together"
+            description="I’m open to opportunities in software development, IT, data, and technology. Feel free to reach out if you’d like to discuss a project, collaboration, or career opportunity"
           />
         </Reveal>
 
@@ -39,9 +39,9 @@ export function ContactSection() {
             <div className="grid lg:grid-cols-[0.9fr_1.1fr]">
               <div className="bg-surface p-7 sm:p-8">
                 <p className="text-sm font-semibold uppercase tracking-[0.24em] text-primary">Reach Out</p>
-                <h3 className="mt-4 text-3xl font-semibold text-foreground">Open to ambitious teams and meaningful collaboration.</h3>
+                <h3 className="mt-4 text-3xl font-semibold text-foreground">Open to new opportunities and meaningful collaborations</h3>
                 <p className="mt-4 max-w-lg text-sm leading-7 text-muted">
-                  Whether you’re building a new product, refining an existing interface, or hiring for a senior frontend role, I’d be happy to connect.
+                  Whether you’re looking for a fresh graduate to join your team or interested in collaborating on a technology project, I’d be happy to connect
                 </p>
 
                 <div className="mt-8 grid gap-4">

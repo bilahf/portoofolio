@@ -18,8 +18,8 @@ export function AchievementsSection() {
         <Reveal>
           <SectionHeading
             eyebrow="Achievements"
-            title="Recognition earned through consistency, craft, and community contribution"
-            description="This section gives achievements enough visual weight to feel meaningful without making the page noisy or overstated."
+            title="Achievements and milestones throughout my journey"
+            description="A collection of academic achievements, organizational contributions, and milestones that reflect my growth and experiences throughout my academic journey"
           />
         </Reveal>
 
