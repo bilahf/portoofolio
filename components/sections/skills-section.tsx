@@ -14,8 +14,8 @@ export function SkillsSection() {
         <Reveal>
           <SectionHeading
             eyebrow="Skills"
-            title="A well-rounded toolkit across engineering, design, and collaboration"
-            description="This portfolio separates content from presentation, so every skill here is fully editable from the data layer while the UI stays reusable and consistent."
+            title="Technical skills and tools I use to build and analyze digital solutions"
+            description="A collection of technical skills, development tools, and technologies I have learned and applied through academic projects, internships, and personal projects."
           />
         </Reveal>
 

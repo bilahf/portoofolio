@@ -85,12 +85,7 @@ export const skills: Skill[] = [
     icon: SiHtml5,
     proficiency: "Advanced",
   },
-  {
-    name: "Tailwind CSS",
-    category: "Programming & Software Development",
-    icon: SiTailwindcss,
-    proficiency: "Intermediate",
-  },
+ 
 
   // ==========================================
   // AI & AUTOMATION
@@ -153,12 +148,7 @@ export const skills: Skill[] = [
     icon: SiMysql,
     proficiency: "Intermediate",
   },
-  {
-    name: "PostgreSQL",
-    category: "Data & Database",
-    icon: SiPostgresql,
-    proficiency: "Intermediate",
-  },
+  
   {
     name: "Firebase",
     category: "Data & Database",
