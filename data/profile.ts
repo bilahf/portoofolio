@@ -9,7 +9,7 @@ export const profile: Profile = {
   bio: "Throughout my academic journey, internships, and organizational experiences, I have worked on application development, system documentation, data management, and workflow automation. I enjoy turning requirements into practical and maintainable solutions while continuously exploring new technologies and improving my technical skills.",
   location: "Gresik, Indonesia",
   availability: "Open to opportunities in software development, full-stack development, IT, data, and workflow automation.",
-  profileImage: "/images/profile/nab1.png",
+  profileImage: "/images/profile/bilahf.jpg",
   resumeUrl: "/resume.pdf",
   stats: [
     { label: "Education", value: "Informatics Engineering" },
@@ -18,7 +18,7 @@ export const profile: Profile = {
   ],
   socials: {
     linkedin: "https://www.linkedin.com/in/bilahf/",
-    github: "https://github.com/",
+    github: "https://github.com/bilahf/",
     instagram: "https://www.instagram.com/bilahf/",
   },
 };

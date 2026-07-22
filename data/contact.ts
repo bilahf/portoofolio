@@ -1,10 +1,10 @@
 import { ContactDetails } from "./types";
 
 export const contact: ContactDetails = {
-  phone: "+62 812-3456-7890",
-  email: "nadia.pramesti@example.com",
-  linkedin: "https://www.linkedin.com/",
-  github: "https://github.com/",
-  instagram: "",
-  location: "Surabaya, Indonesia",
+  phone: "+62 896-8528-4572",
+  email: "nabilah.fitriani@gmail.com",
+  linkedin: "https://www.linkedin.com/in/bilahf/",
+  github: "https://github.com/bilahf/",
+  instagram: "https://www.instagram.com/bilahf/",
+  location: "Gresik, Indonesia",
 };
