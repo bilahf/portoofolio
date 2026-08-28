@@ -10,7 +10,7 @@ export const profile: Profile = {
   location: "Gresik, Indonesia",
   availability: "Open to opportunities in software development, full-stack development, IT, data, and workflow automation.",
   profileImage: "/images/profile/bilahf.jpg",
-  resumeUrl: "/resume.pdf",
+  resumeUrl: "/porto.pdf",
   stats: [
     { label: "Education", value: "Informatics Engineering" },
     { label: "Focus", value: "Full-Stack & Automation" },
