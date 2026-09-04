@@ -73,6 +73,23 @@ export const certifications: CertificationItem[] = [
     certificateUrl: "https://drive.google.com/file/d/1BSw9rsF2FC6e1DI3TKOLDQQ1s_M5xRj1/view?usp=drive_link",
   },
   {
+  image: "/images/certifications/asean.png", // Ganti dengan path gambar sertifikatmu
+  name: "ASEAN Data Science Explorers 2026: SAP Analytics Cloud",
+  organization: "ASEAN Foundation & SAP",
+  issueDate: "August 2026", // Sesuaikan dengan bulan/tahun penerbitan di sertifikatmu
+  credentialId: "", // Masukkan ID kredensial/sertifikat jika ada, atau kosongkan ""
+  skillsLearned: [
+    "SAP Analytics Cloud (SAC)",
+    "Data Modeling",
+    "Data Visualization & Stories",
+    "Time-Series Forecasting",
+    "Business Intelligence",
+    "Data Analyser & Ad-hoc Analysis"
+  ],
+  certificateEnabled: false,
+  certificateUrl: "https://drive.google.com/file/d/xxxxxx/view?usp=drive_link" // Ganti dengan URL file sertifikatmu
+},
+  {
     image: "/images/certifications/china.png",
     name: "Chinese for HSK 1",
     organization: "COURSERA",
