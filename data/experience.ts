@@ -1,6 +1,8 @@
+
 import { ExperienceItem } from "./types";
 
 export const experiences: ExperienceItem[] = [
+
   {
     company: "PT PLN PERSERO UP3 GRESIK",
     logo: "/images/experience/logo-pln.png",
@@ -21,6 +23,7 @@ export const experiences: ExperienceItem[] = [
       "Supported operational data management and documentation processes within the Marketing and Planning Divisions.",
     ],
   },
+
   {
     company: "DISKOMINFO KABUPATEN GRESIK",
     logo: "/images/experience/grsk.png",
@@ -40,6 +43,42 @@ export const experiences: ExperienceItem[] = [
       "Contributed to the preparation of structured technical and user documentation for the GOWA system.",
     ],
   },
+
+  {
+    company: "Bank Mandiri",
+    logo: "/images/experience/mandiri.png",
+    position: "Mobile Apps Developer",
+    employmentType: "Project-Based Internship",
+    location: "Indonesia",
+    duration: "Project-Based Internship Program",
+    summary:
+      "Developed a responsive Android news application by integrating REST API services and implementing seamless navigation and infinite scrolling for an improved user experience.",
+    responsibilities: [
+      "Built an Android news application using Kotlin and Jetpack Compose with a focus on responsive and user-friendly interfaces.",
+      "Integrated REST API from NewsAPI.org using Retrofit for asynchronous HTTP communication and news data retrieval.",
+      "Implemented Top Headlines to display current and popular news when users open the application.",
+      "Developed a structured news list that retrieves and displays articles from multiple sources.",
+      "Implemented infinite scrolling with pagination to automatically load additional news when users reach the bottom of the list.",
+      "Configured API authentication using an API key and managed asynchronous network operations using Kotlin Coroutines.",
+    ],
+    technologies: [
+      "Kotlin",
+      "Jetpack Compose",
+      "Android Studio",
+      "Retrofit",
+      "REST API",
+      "NewsAPI",
+      "Kotlin Coroutines",
+      "JDK 18",
+      "Gradle 7.2",
+    ],
+    achievements: [
+      "Successfully developed a functional Android news application with REST API integration and asynchronous data loading.",
+      "Implemented infinite scrolling and pagination to provide a seamless browsing experience without manual page navigation.",
+      "Gained practical experience in Android mobile application development using Kotlin and modern Android development tools.",
+    ],
+  },
+
   {
     company: "Universitas Muhammadiyah Gresik",
     logo: "/images/experience/umg.png",
@@ -67,6 +106,7 @@ export const experiences: ExperienceItem[] = [
       "Developed experience in technical communication, mentoring, and problem solving through direct interaction with students.",
     ],
   },
+
   {
     company: "HIMATIF UM Gresik",
     logo: "/images/experience/himatif.png",
@@ -92,4 +132,6 @@ export const experiences: ExperienceItem[] = [
       "Strengthened experience in organizational coordination, communication, and administrative management.",
     ],
   },
+
 ];
+

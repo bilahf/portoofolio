@@ -41,7 +41,40 @@ export const projects: ProjectItem[] = [
     liveDemoUrl: "",
     category: "Software Development",
   },
-  
+
+  {
+    image: "/images/projects/news.png",
+    title: "Daily News Mobile Application",
+    description:
+      "A responsive Android news application developed through the Bank Mandiri Mobile Apps Developer Project-Based Internship Program, integrating NewsAPI.org to deliver current news through a seamless browsing experience.",
+    technologies: [
+      "Kotlin",
+      "Jetpack Compose",
+      "Retrofit",
+      "REST API",
+      "NewsAPI",
+      "Kotlin Coroutines",
+      "Android Studio",
+    ],
+    languages: ["Kotlin"],
+    features: [
+      "Top Headlines",
+      "News article listing",
+      "REST API integration",
+      "Infinite scrolling",
+      "Pagination",
+      "Asynchronous data loading",
+      "Responsive Android interface",
+    ],
+    status: "Completed",
+    year: "2026",
+    githubEnabled: false,
+    githubUrl: "",
+    liveDemoEnabled: false,
+    liveDemoUrl: "",
+    category: "Software Development",
+  },
+
   {
     image: "/images/projects/ai.jpg",
     title: "AI Workflow Automation & Intelligent Data Processing",
@@ -72,6 +105,7 @@ export const projects: ProjectItem[] = [
     liveDemoUrl: "",
     category: "AI & Automation",
   },
+
   {
     image: "/images/projects/listr.jpg",
     title: "Industrial Energy Consumption Forecasting System",
@@ -101,6 +135,7 @@ export const projects: ProjectItem[] = [
     liveDemoUrl: "",
     category: "Data & Analytics",
   },
+
   {
     image: "/images/projects/mortgage.jpg",
     title: "Mortgage Trading & Profitability Analysis Dashboard",
@@ -130,6 +165,7 @@ export const projects: ProjectItem[] = [
     liveDemoUrl: "",
     category: "Data & Analytics",
   },
+
   {
     image: "/images/projects/cloud.jpg",
     title: "Cloud Media Server Deployment",
